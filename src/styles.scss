@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: lightskyblue;
+}
+.login-reg-container {
+    width: 500px;
+    height: 600px;
+    float: right;
+    margin: 70px 200px 30px 0;
+    background-color: white;
+    border-radius: 2%;
+    padding: 20px;
+}
+.logo-image {
+    display: block;
+    margin-left: 200px;
+    position:inherit;
+}
