@@ -41,7 +41,8 @@
                     <div class="section-two-container">
                         <h4>Sign up with email</h4>
                         <div class="" style="width: 150px;">
-                            <p>Already have an account?</p><a href="">Sign In</a>
+                            <p>Already have an account?</p><a routerLink="/register" routerLinkActive="active"
+                                ariaCurrentWhenActive="page">Sign In</a>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -63,3 +64,4 @@
 </body>
 
 </html>
+<router-outlet></router-outlet>
