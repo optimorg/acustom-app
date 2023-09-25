@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "acustom-ecomm"
+  },
+  "targets": {
+    "acustom-ecomm": {
+      "hosting": {
+        "acustom-app": [
+          "acustom-ecomm"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

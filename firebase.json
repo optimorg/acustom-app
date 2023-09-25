@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "acustom-app",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
