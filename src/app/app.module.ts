@@ -16,12 +16,18 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthComponent } from './shared/auth/auth.component';
+import { ComponentComponent } from './component/component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent,
+    AuthComponent,
+    ComponentComponent
   ],
   imports: [
     BrowserModule,
