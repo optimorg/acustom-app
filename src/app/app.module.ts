@@ -10,13 +10,15 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import {environment} from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FormsModule } from '@angular/forms';
+import { TasklistComponent } from './component/dashboard/tasklist/tasklist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    TasklistComponent
   ],
   imports: [
     BrowserModule,
