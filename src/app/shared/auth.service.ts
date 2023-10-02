@@ -29,4 +29,15 @@ export class AuthService {
         this.router.navigate(['/register']);
     })//end of then
   }//end of register method
+
+  //sign out
+  logout() {
+    this.fireAuth.signOut().then( () => {
+      localStorage.removeItem('token');
+      alert('Logged out successfuly');
+      this.router.navigate(['/login']);
+    }, err => {
+      alert(err.message);
+    })//end of then
+  }//end of logout
 }//end of Auth Service
