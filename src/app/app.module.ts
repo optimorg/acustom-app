@@ -9,6 +9,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 import {environment} from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AngularFireModule } from '@angular/fire/compat';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
