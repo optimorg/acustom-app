@@ -1,1 +1,14 @@
-<p>tasklist works!</p>
+<div class="card shadow-lg mt-5">
+    <div class="card-header text-center">
+        <h1 class="display-6 fw-bold">Task List</h1>
+    </div>
+    <div class="card-body p-4">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter task" aria-label="Task input field"
+                aria-describedby="add-button" #taskInput>
+            <button class="btn btn-outline-secondary" type="button" id="add-button" (click)="onClick(taskInput)">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+</div>
