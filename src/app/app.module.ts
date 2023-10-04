@@ -12,6 +12,8 @@ import { NavigationComponent } from './component/dashboard/navigation/navigation
 import {environment} from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { FormsModule } from '@angular/forms';
+import { OrderFormComponent } from './component/orders/order-form/order-form.component';
+import { OrderListComponent } from './component/orders/order-list/order-list.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     DashboardComponent,
     TasklistComponent,
-    NavigationComponent
+    NavigationComponent,
+    OrderFormComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
