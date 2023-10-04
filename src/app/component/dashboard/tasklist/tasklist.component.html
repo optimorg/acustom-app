@@ -3,6 +3,23 @@
         <h1 class="display-6 fw-bold">Task List</h1>
     </div>
     <div class="card-body p-4">
+        <!-- <div class="">
+        <li class="list-group-item">
+            <
+            <label class="form-check-label" for="firstCheckbox">{}</label>
+            <input class="form-check-input me-1" type="checkbox" value="{}" id="checkbox" name="checkbox">
+        </li>
+        </div> -->
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let task of tasks">
+                <span>
+                    <i class="text-success" (click)="onStatusChange(task.id,!task.isDone)"
+                        [ngClass]="task.isDone?'fa-solid fa-circle-check':'fa-regular fa-circle'">
+                    </i>
+                    {{task.text}}
+                </span>
+            </li>
+        </ul>
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Enter task" aria-label="Task input field"
                 aria-describedby="add-button" #taskInput>
