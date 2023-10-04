@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Acustom</a>
+        <a class="navbar-brand" href="#">
+            <div class="logo-image-container">
+                <img class="logo-image" src="../assets/resources/img/Acustom_logo.png" style="width: 300px;" />
+            </div>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color: lightsteelblue;"></span>
@@ -8,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Profile</a>
@@ -22,8 +26,11 @@
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit" style="margin-right: 10px;">Search</button>
             </form>
+            <a class="nav-link" href="#">
+                <button type="button" class="btn btn-primary" style="float: right; margin: 10px 0 5px 0">Logout</button>
+            </a>
         </div>
     </div>
 </nav>
