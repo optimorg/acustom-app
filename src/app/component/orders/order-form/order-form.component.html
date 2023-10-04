@@ -1,1 +1,57 @@
-<p>order-form works!</p>
+<div class="card center" style="margin-top: 50px;">
+    <div class="card-body">
+        <form class="row g-3">
+            <p class="h1 center-text">T-Shirt Order Form</p>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+            <div class="col-md-4">
+                <label for="shirtStyle" class="form-label">Shirt Style</label>
+                <select id="shirtStyle" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Classic</option>
+                    <option>V-neck</option>
+                    <option>Scoop Neck</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="shirtSize" class="form-label">Size</label>
+                <select id="shirtSize" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Extra-Large</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="shirtColor" class="form-label">Color</label>
+                <select id="shirtColor" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Special Instructions</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Tell me anything else I need to know about your t-shirt design that you haven't already"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg center">Order</button>
+            </div>
+        </form>
+    </div>
+</div>
