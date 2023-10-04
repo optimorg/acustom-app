@@ -22,7 +22,7 @@ export class TodoService {
     this.firestoreCollection.doc(id).update({isDone: newStatus})
   }
 
-  deleteTask(id: string, newStatus: boolean) {
+  deleteTask(id: string) {
     this.firestoreCollection.doc(id).delete();
   }
 }

@@ -13,9 +13,10 @@ export class TasklistComponent implements OnInit {
   constructor(private todoService: TodoService) {}
   
   ngOnInit(): void {
-    this.todoService.firestoreCollection.valueChanges({idField: 'id'}).subscribe(task => {
-      console.log(task);
-      this.tasks = task;
+    this.todoService.firestoreCollection.valueChanges({ idField: 'id' })
+      .subscribe(task => {
+        this.tasks = task.sort((a:any,b:any) =>  
+        {return a.isDone -b.isDone} );
     })
   }
 
@@ -28,5 +29,9 @@ export class TasklistComponent implements OnInit {
 
   onStatusChange(id:string, newStatus: boolean) {
     this.todoService.updateToDoStatus(id, newStatus);
+  }
+
+  onDelete(id:string) {
+    this.todoService.deleteTask(id);
   }
 }
